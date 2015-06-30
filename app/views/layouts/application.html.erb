@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bidapps</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<title>Bidapps</title>
+	<meta name="description" content="Somos una empresa innovadora.">
+	<meta name="keywords" content="Bidapps development design branding web webapps mobil mobilapps colombia barranquilla">
+	<meta name="author" content="Bidapps Developer Team">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- stylesheet_link_tag "style" -->
+	<link href="/assets/bootstrap.css" media="screen" rel="stylesheet" /> 
+	<!-- stylesheet_link_tag "style" -->
+	<link href="/assets/style.css" media="screen" rel="stylesheet" /> 
+	<!-- stylesheet_link_tag "style" -->
+	<link href="/assets/animate.css" media="screen" rel="stylesheet" /> 
+	<!-- stylesheet_link_tag "style" -->
+	<link href="/assets/jquery.remodal.css" media="screen" rel="stylesheet" /> 
+
+	
+
+	<%= csrf_meta_tags %>
+</head>
+<body class="one-page">
+	<div class="top">
+		<div class="container">
+			<div class="row">
+				<div class="span8">
+					<ul class="contact-info inline pull-left">
+						<li class="skype"><a href="#">bidapps</a></li>
+						<li class="email"><a href="#">info@bidapps.com</a></li>
+						<li class="phone"><a href="#">+51 301 7840278</a></li>
+					</ul>
+				</div><!-- /.span8 -->
+
+			</div><!-- /.row -->
+		</div><!-- /.containter -->
+	</div>
+
+	
+	<div >
+		<% if notice %>
+		<p class="alert alert-success"><%= notice %></p>
+		<% end %>
+		<% if alert %>
+		<p class="alert alert-danger"><%= alert %></p>
+		<% end %>
+		<%= yield %>
+	</div>
+
+	<script src="/assets/jquery.min.js"></script>
+	<script src="/assets/bootstrap.min.js"></script>
+	<script src="/assets/jquery.easing.js"></script>
+	<script src="/assets/matchMedia.js"></script>
+	<script src="/assets/jquery-waypoints.js"></script>
+	<script src="/assets/jquery.bxslider.js"></script>
+	<script src="/assets/parallax.js"></script>
+	<script src="/assets/imagesloaded.min.js"></script>
+	<script src="/assets/jquery.isotope.min.js"></script>
+	<script src="/assets/jquery.sticky.js"></script>
+	<script src="/assets/jquery.fittext.js"></script>
+	<script src="/assets/smoothscroll.js"></script>
+	<script src="/assets/main.js"></script>
+	<script src="/assets/index.js"></script>
+	<script src="/assets/rest.js"></script>
+
+
+
+</body>
+</html>
