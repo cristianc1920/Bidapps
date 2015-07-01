@@ -35,33 +35,29 @@
       </div><!-- /.container -->
     </div><!-- /.header-wrap -->
   </header><!-- /header -->
+<div class="content">
+<p id="notice"><%= notice %></p>
 
-  <div class="content">
-    <h2>Log in</h2>
+<p>
+  <strong>Subject:</strong>
+  <%= @ticket.subject %>
+</p>
 
-    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true %>
-    </div>
+<p>
+  <strong>Detail:</strong>
+  <%= @ticket.detail %>
+</p>
 
-    <div class="field">
-      <%= f.label :password %><br />
-      <%= f.password_field :password, autocomplete: "off" %>
-    </div>
+<p>
+  <strong>Status:</strong>
+  <%= @ticket.status %>
+</p>
 
-    <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-    <% end -%>
+<p>
+  <strong>User:</strong>
+  <%= @ticket.user_id %>
+</p>
 
-    <div class="actions">
-      <%= f.submit "Log in" %>
-    </div>
-    <% end %>
-
-    <%= render "devise/shared/links" %>
-
-  </div>
+<%= link_to 'Edit', edit_ticket_path(@ticket) %> |
+<%= link_to 'Back', tickets_path %>
+</div>

@@ -39,48 +39,6 @@
 		</div><!-- /.containter -->
 	</div>
 
-	<!-- Parallax Fullscreen -->
-<div id="top-slider" class="parallax-bg10 parallax">
-  <div class="overlay"></div>
-  <header id="header" class="header header-sticky">
-    <div class="header-wrap">
-      <div class="container wrapper">
-        <div class="row">
-
-          <div class="span2">
-            <span>
-              <img class="logoEsp" src="images/logo2.png" alt="Logo" id="logoEsp"/>
-            </span>
-            <div id="logo" class="logo">
-              <a href="index.html" rel="home">
-                <img src="images/logo.png" alt="Logo" />
-              </a>
-            </div><!-- /.logo -->
-          </div>
-          <div class="span10">
-            <div class="btn-menu"></div><!-- /mobile menu button -->
-            <nav id="mainnav" class="mainnav">
-              <ul class="menu">
-                <li><a class="active" href="#top">Home</a></li>
-                <li><a href="#about">Servicios</a></li>
-                <li><a href="#projects">Portafolio</a></li>
-                <li><a href="#team">Equipo</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                <% if user_signed_in? %>
-                <span class="logUser">Logged in as <strong><%= current_user.email %></strong>.</span>
-                <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-                <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-                <% else %>
-                <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-                <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-                <% end %>
-              </ul><!-- /.menu -->
-            </nav><!-- /nav -->
-          </div>
-        </div>
-      </div><!-- /.container -->
-    </div><!-- /.header-wrap -->
-  </header><!-- /header -->
 	<div >
 		<% if notice %>
 		<p class="alert alert-success"><%= notice %></p>
