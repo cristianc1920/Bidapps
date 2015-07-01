@@ -57,7 +57,7 @@
         <td><%= ticket.subject %></td>
         <td><%= ticket.detail %></td>
         <td><%= ticket.status %></td>
-        <td><%= ticket.user_id %></td>
+        <td><%= ticket.user.email %></td>
         <td><%= link_to 'Show', ticket %></td>
         <td><%= link_to 'Edit', edit_ticket_path(ticket) %></td>
         <td><%= link_to 'Destroy', ticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>

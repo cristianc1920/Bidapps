@@ -55,7 +55,7 @@
 
 <p>
   <strong>User:</strong>
-  <%= @ticket.user_id %>
+  <%= @ticket.user.email %>
 </p>
 
 <%= link_to 'Edit', edit_ticket_path(@ticket) %> |
