@@ -31,6 +31,20 @@
 
 /* Repeatable Patterns
 -------------------------------------------------------------- */
+
+.navbar-link{
+  color: white;
+}
+
+.navbar-link:hover{
+  color: #31D3FF;
+}
+
+.logUser{
+  color: #31D3FF;
+}
+
+
 *,
 *:before,
 *:after {
